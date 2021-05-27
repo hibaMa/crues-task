@@ -1,0 +1,22 @@
+@import "../../utils/styling/constants.scss";
+
+.StringInput {
+  width: 188px;
+  font-size: 14px;
+  padding: 9px 12px;
+
+  @include crs-form-input-component();
+
+  &--fullWidth {
+    width: 100% !important;
+  }
+
+  &::placeholder {
+    color: $crs-color-gray;
+  }
+
+  &.has-error {
+    border-color: $crs-color-error;
+  }
+
+}

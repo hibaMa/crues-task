@@ -1,0 +1,26 @@
+@import "./constants.scss";
+
+@mixin crs-text-defaults() {
+  font-family: $crs-font-stack;
+  font-size: 14px;
+}
+
+.crs-h2 {
+  @include crs-text-defaults();
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.crs-link {
+  font-family: $crs-font-stack;
+  color: $crs-color-electric-blue;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.crs-p {
+  font-family: $crs-font-stack;
+  font-size: 14px;
+  color: $crs-color-brand-black;
+}

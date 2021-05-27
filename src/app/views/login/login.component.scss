@@ -1,0 +1,26 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.Login {
+  width: 320px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 32px;
+  box-shadow: 0 4px 8px 0 rgb(19 45 77 / 12%);
+
+  &-logo {
+    height: 65px;
+  }
+
+  &-form {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: max-content;
+    grid-gap: 16px;
+
+  }
+}

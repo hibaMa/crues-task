@@ -1,0 +1,63 @@
+@import "../../utils/styling/constants.scss";
+
+@mixin crs-button-default($color, $background) {
+  background-color: $background;
+  color: $color;
+}
+
+@mixin crs-button-active($color, $background) {
+  &:active:not(.is-disabled) {
+    background-color: $background !important;
+    color: $color;
+  }
+}
+
+
+@mixin crs-button-hover($color, $background) {
+  &:hover:not(.is-disabled) {
+    background-color: $background !important;
+    color: $color;
+  }
+}
+
+.Button {
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: $crs-font-stack;
+  font-weight: 600;
+  line-height: 1;
+  transition: background-color 0.2s linear,
+  color 0.2s linear;
+  white-space: nowrap;
+  box-sizing: border-box;
+
+
+  &--fullWidth {
+    width: 100%;
+  }
+
+  /* Appearances */
+
+  &--primaryAppearance {
+    @include crs-button-default($crs-color-white, $crs-color-electric-blue);
+    @include crs-button-active($crs-color-white, $crs-color-electric-blue-1);
+    @include crs-button-hover($crs-color-white, $crs-color-electric-blue-2);
+  }
+
+  /* Sizes */
+
+  &--mediumSize {
+    font-size: 14px;
+    min-height: 40px;
+    padding: 0 16px;
+  }
+
+  /* States */
+
+  &.is-disabled {
+    background-color: $crs-color-gray-5;
+    color: $crs-color-gray-3;
+    cursor: not-allowed;
+  }
+
+}

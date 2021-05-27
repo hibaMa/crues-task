@@ -1,0 +1,13 @@
+@import "../../utils/styling/constants.scss";
+
+.Label {
+    font-family: $crs-font-stack;
+    font-weight: 600;
+
+    &--mediumSize {
+        color: $crs-color-brand-black;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+}

@@ -1,0 +1,21 @@
+<div class="Login">
+  <img class="Login-logo" src="assets/logo.png">
+  <h1 class="crs-h2">Login</h1>
+  <div class="Login-form" [formGroup]="form">
+    <crs-input-field-wrapper labelText="E-mail">
+      <crs-string-input formControlName="email" [hasError]="email.touched && !email.valid"></crs-string-input>
+    </crs-input-field-wrapper>
+    <crs-input-field-wrapper labelText="Password">
+      <crs-string-input formControlName="password" type="password" [hasError]="password.touched && !password.valid"></crs-string-input>
+    </crs-input-field-wrapper>
+     <!--  Forgot password? not implemented  -->
+    <a class="crs-link" style="cursor: not-allowed">Forgot password?</a>
+    <crs-button (click)="login()" [fullWidth]="true" [isDisabled]="!form.valid">Login</crs-button>
+    <p class="crs-p">
+      Don't have an account yet?
+      <a class="crs-link" [routerLink]="['/', 'crues', 'register']">
+        Sign up now
+      </a>
+    </p>
+  </div>
+</div>

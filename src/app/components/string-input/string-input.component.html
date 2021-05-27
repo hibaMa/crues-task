@@ -1,0 +1,9 @@
+<input
+  #input
+  [type]="type"
+  (focus)="setFocus()"
+  (blur)="onBlur()"
+  [disabled]="isDisabled"
+  [ngClass]="ngClass"
+  [(ngModel)]="value"
+  [placeholder]="placeholder || ''">

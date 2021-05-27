@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+// reset component styles
+body, p, input {
+  padding: 0;
+  margin: 0;
+}
+button {
+  border: 0;
+}
+
+@import "src/app/utils/styling/text";

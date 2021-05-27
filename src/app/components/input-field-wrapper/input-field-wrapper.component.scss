@@ -1,0 +1,6 @@
+.InputFieldWrapper {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: max-content max-content;
+  grid-gap: 8px;
+}
